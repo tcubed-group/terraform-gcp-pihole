@@ -1,0 +1,21 @@
+# GCP project details
+gcp_project_id = "your-gcp-project-id"
+gcp_region     = "us-central1"
+gcp_zone       = "us-central1-a"
+
+# Resource naming
+resource_prefix = "pihole-dev"
+
+# Network configuration
+subnet_cidr       = "10.0.0.0/24"
+ssh_source_ranges = ["0.0.0.0/0"]  # Restrict to your IP in production
+web_source_ranges = ["0.0.0.0/0"]  # Restrict to your IP in production
+dns_source_ranges = ["0.0.0.0/0"]  # Might need to be more open
+
+# VM configuration
+vm_machine_type = "e2-micro"
+network_tags    = ["pihole", "http-server", "https-server"]
+
+# SSH configuration
+ssh_username     = "pihole"
+ssh_pub_key_file = "~/.ssh/id_rsa.pub"
