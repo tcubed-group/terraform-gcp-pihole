@@ -1,0 +1,16 @@
+# GCP project details
+gcp_project_id = "your-gcp-project-id"
+gcp_region     = "us-central1"
+gcp_zone       = "us-central1-a"
+
+# VM configuration
+vm_name        = "pihole-server"
+vm_machine_type = "e2-micro"
+vm_image       = "debian-cloud/debian-11"
+
+# SSH configuration
+ssh_username   = "pihole"
+ssh_pub_key_file = "~/.ssh/id_rsa.pub"
+
+# Network tags
+network_tags   = ["pihole", "http-server", "https-server"]
